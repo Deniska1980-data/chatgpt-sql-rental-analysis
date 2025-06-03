@@ -33,6 +33,8 @@ sql_prompts_analysis.md	         All prompts used (Q1–Q4) with ChatGPT
 category_rentals_query.sql           	Final SQL query
 query_validation_notes.txt	     ChatGPT evaluation of query correctness
 (Optional) visualization.png	   Chart of top categories (if applicable)
+## Files
+[`sql_prompts_examples.sql`](sql_prompts_examples.sql) – Sample prompts generated for SQL tasks
+[`top_categories_rental.csv`](top_categories_rental.csv) – Output with top movie categories by rental count
 
-Author Note
 This was a guided exercise in combining LLMs + SQL for learning and analysis. It’s part of my training toward a Junior Data Analyst role, focusing on building practical skills with tools like SQL, ChatGPT, and MySQL. 
