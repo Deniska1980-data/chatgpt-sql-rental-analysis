@@ -14,18 +14,23 @@ a) 4 structured prompt examples (based on different questioning techniques)
 b) Validated SQL query that identifies top-performing movie categories
 c) Experimental prompting method for query generation
 
-Key SQL Query Example:
+## Key SQL Query Example
 
-SELECT c.name AS category_name, COUNT(*) AS total_rentals
-FROM rental r
-JOIN inventory i ON r.inventory_id = i.inventory_id
-JOIN film f ON i.film_id = f.film_id
-JOIN film_category fc ON f.film_id = fc.film_id
-JOIN category c ON fc.category_id = c.category_id
-GROUP BY c.name
+SELECT c.name AS category_name, COUNT(*) AS total_rentals  
+FROM rental r  
+JOIN inventory i ON r.inventory_id = i.inventory_id  
+JOIN film f ON i.film_id = f.film_id  
+JOIN film_category fc ON f.film_id = fc.film_id  
+JOIN category c ON fc.category_id = c.category_id  
+GROUP BY c.name  
 ORDER BY total_rentals DESC;
 
 This query identifies the most rented movie categories.
+
+### Visualization
+![Query 3 Example](obrazek%20do%20ChatGpt_question3.JPG)
+![Query 4 Example](obrazek%20do%20ChatGpt_question4.JPG)
+![SQL File Example](obrazek_category_rentals_query.JPG)
 
 Files in This Repo:
 File	                                      Description
