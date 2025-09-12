@@ -1,5 +1,14 @@
 This project explores how ChatGPT can assist in writing and analyzing SQL queries using a sample MySQL movie rental database. The goal was to practice prompt engineering and understand database structure by answering business-relevant analytical questions.
 
+## Project Highlights
+
+- **Practical SQL Training** – Wrote and validated SQL queries on a movie rental database (MySQL schema).  
+- **Prompt Engineering with AI** – Used ChatGPT to generate and refine SQL queries based on structured prompts.  
+- **Business-Relevant Analysis** – Focused on identifying top-performing movie categories and rental trends.  
+- **Validation Process** – Compared generated queries with schema to ensure correctness and reliability.  
+- **Visual Documentation** – Added query screenshots and results for better clarity and portfolio presentation.  
+- **Bilingual Project** – Documentation available in both English and Czech for broader accessibility.  
+
 Objectives:
 Practice prompt engineering using AI (ChatGPT)
 Generate realistic business questions based on a movie rental schema
