@@ -7,7 +7,16 @@ This project explores how ChatGPT can assist in writing and analyzing SQL querie
 - **Business-Relevant Analysis** – Focused on identifying top-performing movie categories and rental trends.  
 - **Validation Process** – Compared generated queries with schema to ensure correctness and reliability.  
 - **Visual Documentation** – Added query screenshots and results for better clarity and portfolio presentation.  
-- **Bilingual Project** – Documentation available in both English and Czech for broader accessibility.  
+- **Bilingual Project** – Documentation available in both English and Czech for broader accessibility.
+
+## Hlavní přínosy projektu
+
+- **Praktický trénink SQL** – Napsání a ověření SQL dotazů nad databází půjčovny filmů (MySQL schema).  
+- **Prompt engineering s AI** – Využití ChatGPT pro generování a zpřesnění SQL dotazů na základě strukturovaných promptů.  
+- **Obchodně relevantní analýza** – Zaměření na identifikaci nejvýkonnějších filmových kategorií a trendů v půjčování.  
+- **Proces validace** – Porovnání vygenerovaných dotazů se schématem pro zajištění správnosti a spolehlivosti.  
+- **Vizuální dokumentace** – Doplnění screenshotů dotazů a výsledků pro lepší přehlednost a prezentaci v portfoliu.  
+- **Dvojjazyčný projekt** – Dokumentace dostupná v angličtině i češtině pro širší publikum.  
 
 Objectives:
 Practice prompt engineering using AI (ChatGPT)
