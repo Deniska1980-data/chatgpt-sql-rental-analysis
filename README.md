@@ -52,8 +52,10 @@ This query identifies the most rented movie categories.
 
 
 ## Python (pandas) Example
-EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the SQL query.
-CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
+EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the 
+SQL query.
+CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně 
+jako SQL dotaz.
 
 ```python
 import pandas as pd
@@ -76,8 +78,14 @@ print(df_with_totals)
 
 ## Conclusion / Závěr
 
-EN: This project demonstrates how SQL and Python (pandas) can be used side by side to answer the same business question — which film categories generate the most rentals. Through this exercise, I strengthened my skills in prompt engineering, SQL query validation, and data manipulation with pandas. The dual-tool approach adds depth to my data analysis portfolio and shows versatility across tools.
+EN: This project demonstrates how SQL and Python (pandas) can be used side by side to answer the same business
+question — which film categories generate the most rentals. Through this exercise, I strengthened my skills in prompt engineering,
+SQL query validation, and data manipulation with pandas. The dual-tool approach adds depth to my data analysis portfolio and shows
+versatility across tools.
 
-CZ: Tento projekt ukazuje, ako SQL a Python (pandas) môžu byť použité paralelne na odpoveď na rovnakú obchodnú otázku — ktoré filmové kategórie generujú najviac výpožičiek. Počas cvičenia som posilnila zručnosti v promptingu, kontrole správnosti SQL dotazov a transformácii dát v pandas. Kombinovanie dvoch nástrojov pridáva hodnotu môjmu portfóliu a ukazuje moju všestrannosť v práci s dátami.
+CZ: Tento projekt ukazuje, ako SQL a Python (pandas) môžu byť použité paralelne na odpoveď na rovnakú obchodnú
+otázku — ktoré filmové kategórie generujú najviac výpožičiek. Počas cvičenia som posilnila zručnosti v promptingu,
+kontrole správnosti SQL dotazov a transformácii dát v pandas. Kombinovanie dvoch nástrojov pridáva hodnotu môjmu portfóliu a
+ukazuje moju všestrannosť v práci s dátami.
 
 
