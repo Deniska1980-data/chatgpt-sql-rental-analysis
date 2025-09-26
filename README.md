@@ -1,24 +1,21 @@
-This project explores how ChatGPT can assist in writing and analyzing SQL queries using a sample MySQL movie rental database. The goal was to practice prompt engineering and understand database structure by answering business-relevant analytical questions.
+## ChatGPT SQL Rental Analysis
 
-## Project Highlights
+This project explores how **ChatGPT** can assist in writing and analyzing SQL queries using a sample MySQL movie rental database.
+The project also extends the analysis with **Python (pandas) to demonstrate how SQL and Python** can answer the same analytical questions in different ways.
 
-- **Practical SQL Training** – Wrote and validated SQL queries on a movie rental database (MySQL schema).  
-- **Prompt Engineering with AI** – Used ChatGPT to generate and refine SQL queries based on structured prompts.  
-- **Business-Relevant Analysis** – Focused on identifying top-performing movie categories and rental trends.  
-- **Validation Process** – Compared generated queries with schema to ensure correctness and reliability.  
-- **Visual Documentation** – Added query screenshots and results for better clarity and portfolio presentation.  
-- **Bilingual Project** – Documentation available in both English and Czech for broader accessibility.
+Cílem projektu je ukázat, jak lze využít **AI nástroje (ChatGPT) a Python společně s SQL pro trénink analytického myšlení** a budování praktických dovedností v oblasti datové analytiky.
 
-## Hlavní přínosy projektu
+## Project Highlights / Hlavní přínosy projektu
 
-- **Praktický trénink SQL** – Napsání a ověření SQL dotazů nad databází půjčovny filmů (MySQL schema).  
-- **Prompt engineering s AI** – Využití ChatGPT pro generování a zpřesnění SQL dotazů na základě strukturovaných promptů.  
-- **Obchodně relevantní analýza** – Zaměření na identifikaci nejvýkonnějších filmových kategorií a trendů v půjčování.  
-- **Proces validace** – Porovnání vygenerovaných dotazů se schématem pro zajištění správnosti a spolehlivosti.  
-- **Vizuální dokumentace** – Doplnění screenshotů dotazů a výsledků pro lepší přehlednost a prezentaci v portfoliu.  
-- **Dvojjazyčný projekt** – Dokumentace dostupná v angličtině i češtině pro širší publikum.  
+**Practical SQL Training** – Wrote and validated SQL queries on a movie rental database (**MySQL schema**).
+**Prompt Engineering with AI** – Used ChatGPT to generate and refine SQL queries based on structured prompts.
+**Python (pandas) Integration** – Replicated SQL queries in pandas to validate results and strengthen Python data analysis skills.
+**Business-Relevant Analysis** – Focused on identifying top-performing movie categories and rental trends.
+**Validation Process** – Compared generated queries with schema to ensure correctness and reliability.
+**Visual Documentation** – Added query screenshots, Python outputs and results for clarity and portfolio presentation.
+**Bilingual Project** – Documentation available in both English and Czech for broader accessibility.
 
-Objectives:
+## Objectives:
 Practice prompt engineering using AI (ChatGPT)
 Generate realistic business questions based on a movie rental schema
 Use SQL to answer those questions
@@ -49,8 +46,6 @@ This query identifies the most rented movie categories.
 ![Query 4 Example](obrazek%20do%20ChatGpt_question4.JPG)
 ![SQL File Example](obrazek_category_rentals_query.JPG)
 
-
-
 ## Python (pandas) Example
 EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the 
 SQL query.
@@ -78,14 +73,27 @@ print(df_with_totals)
 
 ## Conclusion / Závěr
 
-EN: This project demonstrates how SQL and Python (pandas) can be used side by side to answer the same business
-question — which film categories generate the most rentals. Through this exercise, I strengthened my skills in prompt engineering,
-SQL query validation, and data manipulation with pandas. The dual-tool approach adds depth to my data analysis portfolio and shows
-versatility across tools.
+EN:
+This project demonstrates how SQL and Python (pandas) can be used side by side to answer the same business question — which film categories generate the most rentals.
+Through this exercise, I strengthened my skills in prompt engineering, SQL query validation, and Python data manipulation with pandas.
+The combination of both tools adds value to my portfolio and shows versatility in working with data.
 
-CZ: Tento projekt ukazuje, ako SQL a Python (pandas) môžu byť použité paralelne na odpoveď na rovnakú obchodnú
-otázku — ktoré filmové kategórie generujú najviac výpožičiek. Počas cvičenia som posilnila zručnosti v promptingu,
-kontrole správnosti SQL dotazov a transformácii dát v pandas. Kombinovanie dvoch nástrojov pridáva hodnotu môjmu portfóliu a
-ukazuje moju všestrannosť v práci s dátami.
+CZ:
+Tento projekt ukazuje, jak lze SQL a Python (pandas) využít paralelně pro zodpovězení stejné obchodní otázky — které filmové kategorie generují nejvíce výpůjček.
+Díky tomuto cvičení jsem posílila své dovednosti v prompt engineeringu, validaci SQL dotazů a práci s daty v Pythonu pomocí pandas.
+Kombinace obou nástrojů přidává hodnotu mému portfoliu a dokládá mou všestrannost v oblasti datové analytiky.
 
+## Learning Sources / Zdroje učení
+
+EN: This project builds on knowledge gained from online courses and training:
+Python for Everybody (University of Michigan, Coursera)
+Generative AI Data Analyst Specialisation (Vanderbilt University, Coursera)
+DaPython (PyLadies CZ, Charles University, Faculty of Mathematics and Physics)
+
+CZ: Tento projekt vychází z poznatků získaných během online kurzů a školení:
+Python for Everybody (University of Michigan, Coursera)
+Generative AI Data Analyst Specialisation (Vanderbilt University, Coursera)
+DaPython (PyLadies CZ, Matematicko-fyzikální fakulta Univerzity Karlovy)
+
+Copyright © Denisa Pitnerová, 2025
 
