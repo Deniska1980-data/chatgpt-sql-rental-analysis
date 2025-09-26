@@ -30,7 +30,7 @@ b) Validated SQL query that identifies top-performing movie categories
 c) Experimental prompting method for query generation
 
 ## Key SQL Query Example and Python Example:
-
+SQL Example:
 SELECT c.name AS category_name, COUNT(*) AS total_rentals  
 FROM rental r  
 JOIN inventory i ON r.inventory_id = i.inventory_id  
@@ -40,6 +40,7 @@ JOIN category c ON fc.category_id = c.category_id
 GROUP BY c.name  
 ORDER BY total_rentals DESC;
 
+Python Example:
 import pandas as pd   
 
 Malý dataset podobný Sakila
