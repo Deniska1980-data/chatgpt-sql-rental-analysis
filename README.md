@@ -32,47 +32,6 @@ a) 4 structured prompt examples (based on different questioning techniques)
 b) Validated SQL query that identifies top-performing movie categories
 c) Experimental prompting method for query generation
 
-### Python (pandas) Example
-
-EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the SQL query.
-CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
-
-import pandas as pd
-# Small dataset similar to Sakila
-```python
-data = {
-    "category": ["Action", "Comedy", "Drama", "Action", "Drama", "Comedy", "Action", "Drama", "Comedy", "Action"],
-    "rental_id": [1,2,3,4,5,6,7,8,9,10]}
-df = pd.DataFrame(data)
-
-## Rentals by category
-rentals_by_category = df.groupby("category")["rental_id"].count().reset_index()
-rentals_by_category = rentals_by_category.rename(columns={"rental_id": "total_rentals"})
-print(rentals_by_category)
-
-| category | total_rentals |
-| -------- | ------------- |
-| Action   | 4             |
-| Comedy   | 3             |
-| Drama    | 3             |
-
-import pandas as pd
-```python
-df_with_totals = df.merge(rentals_by_category, on="category")
-print(df_with_totals)
-
-   category  rental_id  total_rentals
-0   Action          1              4
-1   Comedy          2              3
-2   Drama           3              3
-3   Action          4              4
-4   Drama           5              3
-5   Comedy          6              3
-6   Action          7              4
-7   Drama           8              3
-8   Comedy          9              3
-9   Action         10              4
-
 ## Key SQL Query Example
 
 SELECT c.name AS category_name, COUNT(*) AS total_rentals  
@@ -89,6 +48,9 @@ This query identifies the most rented movie categories.
 ![Query 3 Example](obrazek%20do%20ChatGpt_question3.JPG)
 ![Query 4 Example](obrazek%20do%20ChatGpt_question4.JPG)
 ![SQL File Example](obrazek_category_rentals_query.JPG)
+
+
+
 
 
 This was a guided exercise in combining LLMs + SQL for learning and analysis. It’s part of my training toward a Junior Data Analyst role, focusing on building practical skills with tools like SQL, ChatGPT, and MySQL. 
