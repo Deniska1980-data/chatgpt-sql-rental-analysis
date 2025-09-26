@@ -55,3 +55,7 @@ This query identifies the most rented movie categories.
 
 This was a guided exercise in combining LLMs + SQL for learning and analysis. It’s part of my training toward a Junior Data Analyst role, focusing on building practical skills with tools like SQL, ChatGPT, and MySQL. 
 
+## Python (pandas) Example
+EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the SQL query.
+CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
+
