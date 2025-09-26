@@ -41,7 +41,7 @@ GROUP BY c.name
 ORDER BY total_rentals DESC;
 
 import pandas as pd
-# Malý dataset podobný Sakila
+Malý dataset podobný Sakila
 data = {"category": ["Action", "Comedy", "Drama", "Action", "Drama", "Comedy", "Action", "Drama", "Comedy", "Action"],
     "rental_id": [1,2,3,4,5,6,7,8,9,10]}
 df = pd.DataFrame(data)
