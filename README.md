@@ -29,7 +29,7 @@ a) 4 structured prompt examples (based on different questioning techniques)
 b) Validated SQL query that identifies top-performing movie categories
 c) Experimental prompting method for query generation
 
-## Key SQL Query Example
+## Key SQL Query Example and Python Example:
 
 SELECT c.name AS category_name, COUNT(*) AS total_rentals  
 FROM rental r  
@@ -39,6 +39,13 @@ JOIN film_category fc ON f.film_id = fc.film_id
 JOIN category c ON fc.category_id = c.category_id  
 GROUP BY c.name  
 ORDER BY total_rentals DESC;
+
+import pandas as pd
+# Malý dataset podobný Sakila
+data = {"category": ["Action", "Comedy", "Drama", "Action", "Drama", "Comedy", "Action", "Drama", "Comedy", "Action"],
+    "rental_id": [1,2,3,4,5,6,7,8,9,10]}
+df = pd.DataFrame(data)
+print(df)
 
 This query identifies the most rented movie categories.
 ### Visualization
