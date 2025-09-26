@@ -51,11 +51,33 @@ This query identifies the most rented movie categories.
 
 
 
-
-
-This was a guided exercise in combining LLMs + SQL for learning and analysis. It’s part of my training toward a Junior Data Analyst role, focusing on building practical skills with tools like SQL, ChatGPT, and MySQL. 
-
 ## Python (pandas) Example
 EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the SQL query.
 CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
+
+```python
+import pandas as pd
+## Malý dataset podobný Sakila
+df_with_totals = df.merge(rentals_by_category, on="category")
+print(df_with_totals)
+
+   category  rental_id  total_rentals
+0   Action          1              4
+1   Comedy          2              3
+2   Drama           3              3
+3   Action          4              4
+4   Drama           5              3
+5   Comedy          6              3
+6   Action          7              4
+7   Drama           8              3
+8   Comedy          9              3
+9   Action         10              4
+
+
+## Conclusion / Závěr
+
+EN: This project demonstrates how SQL and Python (pandas) can be used side by side to answer the same business question — which film categories generate the most rentals. Through this exercise, I strengthened my skills in prompt engineering, SQL query validation, and data manipulation with pandas. The dual-tool approach adds depth to my data analysis portfolio and shows versatility across tools.
+
+CZ: Tento projekt ukazuje, ako SQL a Python (pandas) môžu byť použité paralelne na odpoveď na rovnakú obchodnú otázku — ktoré filmové kategórie generujú najviac výpožičiek. Počas cvičenia som posilnila zručnosti v promptingu, kontrole správnosti SQL dotazov a transformácii dát v pandas. Kombinovanie dvoch nástrojov pridáva hodnotu môjmu portfóliu a ukazuje moju všestrannosť v práci s dátami.
+
 
