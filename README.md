@@ -75,7 +75,6 @@ print(rentals_by_category)
 | Drama    | 3             |
 
 import pandas as pd
-# Malý dataset podobný Sakila
 ```python
 df_with_totals = df.merge(rentals_by_category, on="category")
 print(df_with_totals)
