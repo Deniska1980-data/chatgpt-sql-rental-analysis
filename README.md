@@ -56,16 +56,14 @@ EN: Example of analyzing movie rental data with pandas. The dataset is grouped b
 CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
 
 import pandas as pd
-
 # Small dataset similar to Sakila
+```python
 data = {
     "category": ["Action", "Comedy", "Drama", "Action", "Drama", "Comedy", "Action", "Drama", "Comedy", "Action"],
-    "rental_id": [1,2,3,4,5,6,7,8,9,10]
-}
-
+    "rental_id": [1,2,3,4,5,6,7,8,9,10]}
 df = pd.DataFrame(data)
 
-# Rentals by category
+## Rentals by category
 rentals_by_category = df.groupby("category")["rental_id"].count().reset_index()
 rentals_by_category = rentals_by_category.rename(columns={"rental_id": "total_rentals"})
 print(rentals_by_category)
@@ -75,6 +73,24 @@ print(rentals_by_category)
 | Action   | 4             |
 | Comedy   | 3             |
 | Drama    | 3             |
+
+import pandas as pd
+# Malý dataset podobný Sakila
+```python
+df_with_totals = df.merge(rentals_by_category, on="category")
+print(df_with_totals)
+
+   category  rental_id  total_rentals
+0   Action          1              4
+1   Comedy          2              3
+2   Drama           3              3
+3   Action          4              4
+4   Drama           5              3
+5   Comedy          6              3
+6   Action          7              4
+7   Drama           8              3
+8   Comedy          9              3
+9   Action         10              4
 
 
 Files in This Repo:
