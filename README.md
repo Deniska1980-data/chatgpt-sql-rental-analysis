@@ -50,6 +50,33 @@ This query identifies the most rented movie categories.
 ![Query 4 Example](obrazek%20do%20ChatGpt_question4.JPG)
 ![SQL File Example](obrazek_category_rentals_query.JPG)
 
+### Python (pandas) Example
+
+EN: Example of analyzing movie rental data with pandas. The dataset is grouped by film category to count total rentals, similar to the SQL query.
+CZ: Ukázka analýzy dat o půjčovnách filmů pomocí pandas. Dataset je seskupen podle filmové kategorie pro výpočet počtu půjčoven, podobně jako SQL dotaz.
+
+import pandas as pd
+
+# Small dataset similar to Sakila
+data = {
+    "category": ["Action", "Comedy", "Drama", "Action", "Drama", "Comedy", "Action", "Drama", "Comedy", "Action"],
+    "rental_id": [1,2,3,4,5,6,7,8,9,10]
+}
+
+df = pd.DataFrame(data)
+
+# Rentals by category
+rentals_by_category = df.groupby("category")["rental_id"].count().reset_index()
+rentals_by_category = rentals_by_category.rename(columns={"rental_id": "total_rentals"})
+print(rentals_by_category)
+
+| category | total_rentals |
+| -------- | ------------- |
+| Action   | 4             |
+| Comedy   | 3             |
+| Drama    | 3             |
+
+
 Files in This Repo:
 File	                                      Description
 sql_prompts_analysis.md	         All prompts used (Q1–Q4) with ChatGPT
